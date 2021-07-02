@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Encuesta</title>
+<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+
+<body class="preguntas">
+
+<div id="container">
+    <header class="Titulos">
+        <h1>Cuestionario</h1>
+        <p class="subtitulo">Responde las preguntas (Pueden haber varias respuestas)</p>
+    </header>
+
+    <section>
+        <div id="resultado"></div>
+       
+        <form name="cuestionario" onsubmit="return validacion()">
+
+            <br>
+            <h3>Las personas LGBTI y aquellas con identidades de género no convencional existen:</h3>
+            <br>
+            <input type="radio" name="p1" value="a">A. Sobre todo en Occidente, aunque en menor número en el resto del mundo a consecuencia de la globalización.</br>
+            <input type="radio" name="p1" value="b">B. En todos los países, regiones, ciudades, pueblos y comunidades del mundo.</br>
+            <input type="radio" name="p1" value="c">C. En la mayoría de los países, aunque se agrupan sobre todo en los centros urbanos y escasamente o nada en las zonas rurales.</br>
+
+            <br>
+            <h3>Las leyes que penalizan una conducta sexual consentida entre personas del mismo sexo y las diversas identidades de género existen en:</h3>
+            <br>
+
+            <input type="radio" name="p2" value="a">A. Menos de 15 países y ningún país impone como castigo máximo la pena de muerte.</br>
+            <input type="radio" name="p2" value="b">B. Menos de 35 países y al menos cinco países imponen como castigo máximo la pena de muerte.</br>
+            <input type="radio" name="p2" value="c">C. Más de 75 países y al menos siete países imponen como castigo máximo la pena de muerte.</br>
+
+
+            <br>
+            <h3>Personas de todas las regiones del mundo son objeto de los siguientes abusos de los derechos humanos, discriminación o persecución a consecuencia de su orientación sexual real o supuesta, su identidad de género o su expresión de género.</h3>
+            <br>
+
+            <input type="checkbox" name="p3" value="a">A. Asesinato, tortura o violación.</br>
+            <input type="checkbox" name="p3" value="b">B. Humillación pública, estereotipos negativos, acoso, exposición pública/revelación, abuso o delitos motivados por prejuicios.</br>
+            <input type="checkbox" name="p3" value="c">C. Tipificación penal, arresto y detención arbitrarios, negación del derecho a un juicio justo y pena de muerte, en ocasiones según las leyes de aplicación general, como leyes de alteración del orden público o de moralidad.</br>
+            <input type="checkbox" name="p3" value="d">D. Negación del acceso o acceso limitado a la asistencia o la protección policial, así como a los mecanismos de denuncia de violaciones de los derechos humanos y de acceso a la justicia.</br>
+            <input type="checkbox" name="p3" value="e">E. Negación del acceso o acceso limitado a la atención médica, la educación, la vivienda, los servicios sociales y la seguridad social.</br>
+            <input type="checkbox" name="p3" value="f">F. Discriminación en la contratación y destitución sumaria en el trabajo.</br>
+            <input type="checkbox" name="p3" value="g">G. Acoso, violencia o discriminación en las escuelas, los lugares de trabajo, las comunidades y las familias.</br>
+            <input type="checkbox" name="p3" value="h">H. Tratamiento médico forzoso, incluidos exámenes anales, cirugías genitales, operaciones forzosas de cambio de sexo, esterilización forzosa, tratamiento «reparador» para «curar» la homosexualidad y terapia de choque.</br>
+            <input type="checkbox" name="p3" value="i">I. Restricciones arbitrarias del derecho a la libertad de expresión y ataques a sus defensores y las organizaciones que les prestan su apoyo a través de «leyes de propaganda» y de otros medios.</br>
+            <input type="checkbox" name="p3" value="j">J. Falta de reconocimiento oficial de la identidad de género de las personas trans.</br>
+            <input type="checkbox" name="p3" value="k">K. Discriminación y violencia contra parejas del mismo sexo o sus hijos.</br>
+            
+            <br>
+            <h3>En varios países, las personas LGBTI y aquellas cuyas identidades y expresiones de género no se adaptan a las expectativas de las sociedades han sido objeto de abusos organizados por parte de:</h3>
+            <br>
+
+            <input type="checkbox" name="p4" value="a">A.Extremistas religiosos y nacionalistas extremos</br>
+            <input type="checkbox" name="p4" value="b">B. Grupos paramilitares</br>
+            <input type="checkbox" name="p4" value="c">C. Profesionales médicos</br>
+            <input type="checkbox" name="p4" value="d">D. Agentes de los gobiernos y estatales</br>
+            <input type="checkbox" name="p4" value="e">E. Organizaciones de los medios de comunicación</br>
+            <input type="checkbox" name="p4" value="f">F. Familias y comunidades</br>
+            <input type="checkbox" name="p4" value="g">G. Organizaciones de las Naciones Unidas</br>
+
+            <br>
+            <h3>Los actos violentos contra las personas LGBTI y aquellas cuyas identidades y expresiones de género no se adaptan a las expectativas de las sociedades suelen ser «especialmente despiadados en comparación con otros delitos motivados por prejuicios». ¿Por qué motivo no se denuncian violaciones tan graves de los derechos humanos?</h3>
+            <br>
+
+            <input type="checkbox" name="p5" value="a">A. Puede que estas personas se sientan avergonzadas de su orientación sexual, su identidad de género o sus características sexuales y no comuniquen estas violaciones.</br>
+            <input type="checkbox" name="p5" value="b">B. Con frecuencia las personas incluso incitan la violencia de la que son objeto, aldesafiar las normas locales.</br>
+            <input type="checkbox" name="p5" value="c">C. Puede que las personas no confíen en la policía, el gobierno u otras autoridades.</br>
+            <input type="checkbox" name="p5" value="d">D. Puede que las personas teman que sus familias o comunidades descubran que son LGBTI.</br>
+
+
+            <br>
+            <h3>Las violaciones de los Derechos Humanos pueden tener lugar por motivos de orientación sexual, identidad o expresión de género. Entre otros aspectos, esto implica que las personas pueden ser víctimas de violación de sus derechos debido a que:</h3>
+            <br>
+
+            <input type="checkbox" name="p4" value="a">A. Desafían las normas de género asociadas a la expresión visible. Por ejemplo, puede perseguirse a los hombres porque se muestran «demasiado afeminados» o a las mujeres por mostrarse «demasiado masculinas».</br>
+            <input type="checkbox" name="p4" value="b">B. Desafían las normas de género asociadas con el comportamiento. Por ejemplo, puede que las personas no tengan los mismos hábitos o intereses asociados tradicionalmente a su género que sus homólogos, como el caso de los hombres a los que no les gusta el deporte o las mujeres que no utilizan maquillaje.</br>
+            <input type="checkbox" name="p4" value="c">C. Desafían las normas de género asociadas con la convivencia o el matrimonio. Por ejemplo, las personas que tienen una relación con personas de su mismo sexo puede que no cumplan con las expectativas sociales debido a que no se han casado o tenido hijos, o porque viven con una persona de su mismo sexo.</br>
+          
+
+            <br>
+            <h3>La postura de las Naciones Unidas sobre los Derechos Humanos relacionados con la orientación sexual y la identidad de género es:</h3>
+            <br>
+
+            <input type="checkbox" name="p4" value="a">A.Estos derechos se determinan en función del país en el que viven las personas. Por encima de todo deben respetarse las creencias sociales, culturales y religiosas locales.</br>
+            <input type="checkbox" name="p4" value="b">B. Los Derechos Humanos son los mismos para todas las personas. Los Estados con leyes o prácticas discriminatorias deben proceder a su reforma y proporcionar plena protección a todos los ciudadanos.</br>
+            <input type="checkbox" name="p4" value="c">C. Se necesitan nuevas leyes internacionales, que adopten el formato de un convenio o pacto especial sobre los derechos relacionados con la orientación sexual y la identidad de género, para que los Estados puedan proteger a todos los ciudadanos.</br>
+            <input type="checkbox" name="p4" value="d">D. Los Estados deben garantizar la protección de todas las personas que se encuentran en su jurisdicción e investigar de inmediato y a fondo todos los casos de violencia y asesinatos, incluidos los motivados por la orientación sexual y la identidad de género de la víctima.</br>
+
+
+            <br>
+            <h3>Según el Alto Comisionado de las Naciones Unidas para los Derechos Humanos, las obligaciones jurídicas fundamentales de los Estados en materia de protección de los Derechos Humanos, relacionados con la orientación sexual y la identidad de género incluyen:</h3>
+            <br>
+
+            <input type="checkbox" name="p4" value="a">A. Proteger a las personas contra la violencia homófoba y transfóbica y prevenir la tortura y los tratos crueles, inhumanos y degradantes.</br>
+            <input type="checkbox" name="p4" value="b">B. Derogar las leyes que tipifican penalmente la homosexualidad, incluidas todas las que prohíben la conducta sexual privada consentida entre adultos u otras leyes que penalizan a las personas por motivo de su expresión de género.</br>
+            <input type="checkbox" name="p4" value="c">C. Prohibir la discriminación basada en la orientación sexual y la identidad de género.</br>
+            <input type="checkbox" name="p4" value="d">D. Salvaguardar la libertad de expresión, de asociación y de reunión pacífica de todas las personas y garantizar que cualquier limitación de esos derechos no sea discriminatoria por motivos de orientación sexual o identidad de género.</br>
+            <input type="checkbox" name="p4" value="e">E. Garantizar un salario mínimo a todas las personas LGBTI y a aquellas cuya identidad o expresión de género no se adapte a las expectativas de las sociedades.</br>
+
+
+
+            <input type="submit" value="Enviar respuestas">
+            </br>
+            </br>
+           
+
+        </form>
+        
+    </section>
+</div>
+
+
+  <script src="js/validacion.js"></script>
+ 
+
+
+
+
+</body>
+
+</html>
